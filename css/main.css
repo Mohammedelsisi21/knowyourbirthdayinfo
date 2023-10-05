@@ -1,0 +1,235 @@
+*{
+    box-sizing: border-box;
+}
+:root {
+    --section-padding : 80px;
+    --transition-d : 1s;
+}
+html {
+    direction: rtl;
+}
+body {
+    font-family: 'Cairo', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    caret-color: #6DFC6B;
+}
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+    section .container input[type="date"] {
+        padding: 15px 50px !important;
+    }
+}
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+section {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+    width: 100%;
+}
+section .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to top left , #305170,#6DFC6B);
+    width: 70%;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    box-shadow: -5px -5px 10px #6DFC6B,5px 5px 10px #305170;
+    flex-wrap: wrap;
+}
+section .container h1 {
+    font-size: 40px;
+    line-height: 1.2;
+    font-weight: 800;
+    color: #f5f5f5;
+    text-align: center;
+}
+@media (max-width: 500px) {
+    section .container h1 {
+        font-size: 12px;
+        padding-top: 10px;
+    }
+    section .container {
+        width: 80%;
+    }
+}
+@media (max-width: 767px) {
+    .container {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    section .container h1 {
+        font-size: 20px;
+        padding-top: 15px;
+    }
+    section .container {
+        width: 100%;
+    }
+
+    section{
+        padding: 0px;
+    }
+}
+section .container label {
+    font-size: 25px;
+    font-weight: 700;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5px;
+    padding: 15px 30px;
+    color: #f5f5f5;
+}
+section .container form {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+section .container input[type="date"] {
+    width: 60%;
+    padding: 15px 30px;
+    font-size: 20px;
+    display: block;
+    margin-bottom: 50px;
+    background: linear-gradient(to bottom right , #305170,rgb(109, 252, 107,.5));
+    color: #f5f5f5;
+    outline: none;
+    border: none;
+    transition: var(--transition-d);
+    -webkit-transition: var(--transition-d);
+    -moz-transition: var(--transition-d);
+    -ms-transition: var(--transition-d);
+    -o-transition: var(--transition-d);
+    cursor: pointer;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+@media (max-width: 767px) {
+    section .container input[type="date"] {
+        width: 80%;
+    }
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+    color: rgba(0, 0, 0, 0);
+    opacity: 1;
+    display: block;
+    background: url(https://mywildalberta.ca/images/GFX-MWA-Parks-Reservations.png) no-repeat;
+    width: 20px;
+    height: 20px;
+    border-width: thin;
+    padding-top: 5px;
+    cursor: pointer;
+}
+    section .container input[type="date"]:hover {
+    transform: scale(1.15);
+    transition: var(--transition-d);
+    -webkit-transition: var(--transition-d);
+    -moz-transition: var(--transition-d);
+    -ms-transition: var(--transition-d);
+    -o-transition: var(--transition-d);
+    -webkit-transform: scale(1.15);
+    -moz-transform: scale(1.15);
+    -ms-transform: scale(1.15);
+    -o-transform: scale(1.15);
+}
+section .container button {
+    padding: 15px 30px;
+    font-size: 20px;
+    background-color: transparent;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    color: #f5f5f5;
+    border: 1px #f5f5f5 solid;
+    cursor: pointer;
+    margin: 0 0 50px;
+    transition: var(--transition-d);
+    -webkit-transition: var(--transition-d);
+    -moz-transition: var(--transition-d);
+    -ms-transition: var(--transition-d);
+    -o-transition: var(--transition-d);
+}
+section .container button:hover {
+    transition: var(--transition-d);
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -webkit-transition: var(--transition-d);
+    -moz-transition: var(--transition-d);
+    -ms-transition: var(--transition-d);
+    -o-transition: var(--transition-d);
+}
+section .container .box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: #f5f5f5;
+    flex-wrap: wrap;
+}
+section .container .box .one {
+    text-align: center;
+    height: 120px;
+    border: 1px solid #f5f5f5;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    margin-bottom: 50px;
+}
+@media (max-width: 768px) {
+    section .container .box .one {
+        width: 60%;
+    }
+}
+@media (min-width: 768px) {
+    section .container .box .one {
+        width: calc(94% / 2);
+    }
+}
+@media (min-width: 992px) {
+    section .container .box .one {
+        width: calc(94% / 3);
+    }
+}
+@media (min-width: 992px) {
+    section .container .box .one {
+        width: calc(94% / 4);
+    }
+}
+section .container .box .one h5{
+    border-bottom: 1px solid #f5f5f5;
+    padding: 10px 0px;
+    width: 60%;
+    margin: auto;
+}
