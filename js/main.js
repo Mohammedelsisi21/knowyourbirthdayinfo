@@ -80,6 +80,8 @@ var zodiacsection = document.getElementById("zodiacsection");
 var Daysection = document.getElementById("Daysection");
 var tonext   = document.getElementById("tonext");
 var cameagy  =document.getElementById("cameagy");
+var Hijri = document.getElementById("Hijri");
+
 
 function send() {
     var birthdate = mydate.value;
@@ -88,8 +90,10 @@ function send() {
     var dayOfbith = Whichday(birthdate);
     var next= daysToBirthday(birthdate);
     var nextage = parseInt(clientAge) + 1;
-    console.log(nextage)
+    var HI =      writeHijri(birthdate);
 
+
+    Hijri.innerHTML   =  HI;
     agesection.innerHTML = clientAge;
     zodiacsection.innerHTML = clientZodiac;
     Daysection.innerHTML = dayOfbith;
@@ -97,3 +101,13 @@ function send() {
     cameagy.innerHTML = nextage ;
 }
 
+
+
+// date is optional, defaults to today
+function writeHijri(birthdate) {
+    var birthdate = new Date(birthdate);
+    var options = {
+        year: 'numeric', month: 'long', day: 'numeric'
+    };
+    return birthdate.toLocaleString('ar' + '-u-ca-islamic', options);
+}
