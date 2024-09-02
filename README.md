@@ -1,11 +1,19 @@
 # know your birthday info
-<h2>Demo</h2>
-<a href="https://mohammedelsisi21.github.io/knowyourbirthdayinfo/">https://mohammedelsisi21.github.io/knowyourbirthdayinfo/</a>
-<h2>Project Description</h2>
-<p>in this project you can know your age , zodiac sign , day of birth and days left for next birthday</p>
+## Demo
+[Go To Demo](https://mohammedelsisi21.github.io/knowyourbirthdayinfo/)
+
+## Project Description
+### Birthday Calculator
+A lightweight web app built with **HTML**, **CSS**, and **JavaScript** that lets users input their birthdate. The app provides the following features:
+- **Current Age**: Calculates your exact age in years.
+- **Zodiac Sign**: Determines your zodiac sign based on your birthdate.
+- **Next Birthday**: Displays the date of your next birthday.
+- **Countdown**: Shows the number of days left until your upcoming birthday.
+- **Hijri Birthdate**: Converts and displays your birthdate in the Islamic (Hijri) calendar.
+
+Perfect for anyone curious about their astrological and calendar-based details!
 
 
+## Project Screenshot
 
-<h2>Project Screenshot</h2>
-
-<img src="projectimage.png">
+![Project ScreenShot](./projectimage.png)
