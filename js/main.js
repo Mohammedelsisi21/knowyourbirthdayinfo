@@ -62,7 +62,7 @@ function daysToBirthday(birthday, isEnglish) {
     var daysToBirthday = Math.floor(dateDiff / 1000 / 60 / 60 / 24);
     
     return isEnglish 
-        ? daysToBirthday + " days left until your birthday! 🎉🎉" 
+        ? daysToBirthday + " days left until your birthday! 🎉" 
         : daysToBirthday + " يوما🥳🥳🥳";
 }
 
@@ -127,7 +127,8 @@ function switchLanguage() {
         ? 'اعرف كل المعلومات <span style="color: #305170; font-weight: 900;">من تاريخ ميلادك.</span>' 
         : 'Find all the information <span style="color: #305170; font-weight: 900;">from your birth date.</span>';
 
-    document.getElementById('dateLabel').innerText = selectedLanguage === 'ar' ? 'اختار تاريخ ميلادك' : 'Select your birth date';
+    document.getElementById('dateLabel').innerText = selectedLanguage === 'ar' ? 'اختار تاريخ ميلادك 🎉🎉' : 'Select your birth date 🎉🎉';
+    document.getElementById('warningMessage').innerHTML = selectedLanguage === 'ar' ? 'يرجى إدخال البيانات قبل الإرسال . ' : 'Please enter data before submitting .';
     document.getElementById('sendButton').innerText = selectedLanguage === 'ar' ? 'ارسال' : 'Send';
     document.getElementById('ageLabel').innerText = selectedLanguage === 'ar' ? 'العمر' : 'Age';
     document.getElementById('zodiacLabel').innerText = selectedLanguage === 'ar' ? 'البرج' : 'Zodiac';
