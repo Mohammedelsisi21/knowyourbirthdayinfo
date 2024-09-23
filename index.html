@@ -11,43 +11,46 @@
 </head>
 <body>
     <section>
+
         <div class="container">
-            <h1>اعرف كل المعلومات <span style="color: #305170; font-weight: 900;">من تاريخ ميلادك.</span></h1>
-            <form action="">
-                <label for="mydate">اختار تاريخ ميلادك</label>
+            <select id="languageSelect" onchange="switchLanguage()">
+                <option value="ar">العربية</option>
+                <option value="en">English</option>
+            </select>
+            <h1 id="mainTitle">اعرف كل المعلومات <span style="color: #305170; font-weight: 900;">من تاريخ ميلادك.</span></h1>
+            <form action="" id="myForm">
+                <label id="dateLabel" for="mydate">اختار تاريخ ميلادك</label>
                 <input type="date" name="date" id="mydate">
             </form>
             <div style="width: 100%; text-align: center;">
-                <button onclick="send()">ارسال</button>
+                <button id="sendButton" onclick="send()">ارسال</button>
             </div>
+            <div id="warningMessage" style="display:none; color:white; font-size: 20px; font-weight: bold; padding-bottom: 20px;">يرجى إدخال البيانات قبل الإرسال.</div>
             <div class="box">
                 <div class="one">
-                    <h5>العمر</h5>
+                    <h5 id="ageLabel">العمر</h5>
                     <p id="agesection"></p>
                 </div>
                 <div class="one">
-                    <h5>البرج</h5>
+                    <h5 id="zodiacLabel">البرج</h5>
                     <p id="zodiacsection"></p>
                 </div>
                 <div class="one">
-                    <h5>يوم الميلاد</h5>
+                    <h5 id="dayLabel">يوم الميلاد</h5>
                     <p id="Daysection"></p>
                 </div>
                 <div class="one">
-                    <h5> متبقي علي <span id="cameagy"></span></h5>
+                    <h5 id="timeLeftLabel">متبقي علي <span id="cameagy"></span></h5>
                     <p id="tonext"></p>
                 </div>
                 <div class="one">
-                    <h5> ميلادك الهجري <span id="cameagy"></span></h5>
+                    <h5 id="hijriLabel">ميلادك الهجري <span id="cameagy"></span></h5>
                     <p id="Hijri"></p>
                 </div>
-
             </div>
         </div>
     </section>
-    <script src="js/main.js"></script>
 
+    <script src="js/main.js"></script>
 </body>
 </html>
-
-
