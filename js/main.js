@@ -55,22 +55,16 @@ function Whichday(date){
 
 function daysToBirthday(birthday) {
 
-    // Get today's date
     var today = new Date();
-    var birthday = new Date(birthday); // April 15
-    // Get next birthday 
+    var birthday = new Date(birthday);
     var nextBirthday = new Date(today.getFullYear(), birthday.getMonth(), birthday.getDate());
-    // If next birthday is in the past, use next year's birthday 
     if(nextBirthday < today) {
         nextBirthday.setFullYear(nextBirthday.getFullYear() + 1);
     }
-    // Calculate time difference between dates in milliseconds  
     var dateDiff = nextBirthday - today;  
-    // Convert milliseconds to days
     var daysToBirthday = Math.floor(dateDiff / 1000 / 60 / 60 / 24);
     return daysToBirthday +" "+ "يوما🥳🥳🥳";
 }
-  // Example
 
 
 
@@ -103,7 +97,6 @@ function send() {
 
 
 
-// date is optional, defaults to today
 function writeHijri(birthdate) {
     var birthdate = new Date(birthdate);
     var options = {
